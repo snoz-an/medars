@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" href="./images/logo.svg" type="image/x-icon">
+
+     <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- Slick CSS -->
+  <link rel="stylesheet" type="text/css" href="./js/slick-1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="./js/slick-1.8.1/slick/slick-theme.css" /> 
+  <!-- Main CSS -->
+   <link rel="stylesheet" href="./css/main.css">
+   <link rel="stylesheet" href="./css/helper.css">
+   <link rel="stylesheet" href="./fonts/Gilroy/stylesheet.css">
+   
+   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+   <script src="https://api-maps.yandex.ru/2.1/?apikey=db32f154-f5b8-442a-bb04-5f55f07bbae7&lang=ru_RU"></script>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.2.6/swiper-bundle.min.js" integrity="sha512-CGsqPVUZUUVx5RS41AFdu5Ghj3cKcpHxg7ae66br18nqK5dTPJ2k6srKYVHMMIvaq96QIoOE8JrqXrlWuppfEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.2.5/swiper-bundle.min.js"></script>
+
+   <script src="./js/script.js"></script>
+    <script src="./js/logo.js"></script>
+
+    <!-- SLICK JS -->
+    <script src="./js/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="./js/slick.js"></script>
+
+   <script src="./js/script.js"></script>
+   <script src="./js/quiz.js"></script>
+   <script src="./js/logo.js"></script>
+   
+   <title>MEDARS</title>
+
+
+</head>
+
+
+<div class="full_page">
+
+    <div>
+
+    <div class="header_container">
+        <div class="fixed">
+            <div class="container" style="position: relative;">
+                <header>
+                    
+    
+                    <div class="second_panel">
+                        <ul class="logo_list d-flex">
+                            <li class="d-flex align-items-center mr-4">
+                                <div class="mr-4" style="display: flex;
+                                flex-direction: column;">
+                                   <div class="header_line_1"></div>
+                                   <div class="header_line_2"></div>
+                                    
+                                </div>
+                                <img src="./images/medars-logo.svg" alt="">
+                            </li>
+                            <div class="d-flex mt-2">
+                            <li class="none d-flex align-items-center">
+                                <div class="fs-md-16 fs-14">Москва г.</div>
+                                <svg class="mt-1 ml-1" width="6" height="4" viewBox="0 0 6 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.254877 1.51188L2.41324 3.67021C2.73824 3.99521 3.26324 3.99521 3.58824 3.67021L5.74657 1.51188C6.27157 0.986881 5.89657 0.0869141 5.1549 0.0869141H0.83821C0.0965434 0.0869141 -0.270123 0.986881 0.254877 1.51188Z" fill="#282828"/>
+                                </svg>
+                            </li>
+                           
+                            </div>
+                        </ul>
+                        <ul class="logo_list_2 d-flex align-items-center">
+                            <li class="d-flex align-items-center mr-4">
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.51968 7.16965L8.30968 5.94965C8.10968 5.74965 7.83968 5.62965 7.58968 5.62965C7.31968 5.62965 7.07968 5.73965 6.86968 5.94965L6.16968 6.64965C6.13968 6.62965 6.09968 6.60965 6.06968 6.59965C6.06968 6.59965 6.05968 6.59965 6.05968 6.58965L6.04968 6.57965C5.95968 6.51965 5.85968 6.45965 5.73968 6.40965C5.12968 6.02965 4.55968 5.49965 3.97968 4.78965C3.70968 4.44965 3.51968 4.14965 3.36968 3.81965C3.52968 3.68965 3.64968 3.55965 3.73968 3.45965L4.04968 3.14965C4.28968 2.92965 4.40968 2.67965 4.40968 2.41965C4.40968 2.14965 4.28968 1.89965 4.05968 1.65965L3.10968 0.709648C3.01968 0.619648 2.92968 0.529648 2.82968 0.439648C2.62968 0.249648 2.37968 0.139648 2.11968 0.139648C1.82968 0.139648 1.58968 0.239648 1.36968 0.459648L0.63968 1.18965C0.34968 1.45965 0.17968 1.79965 0.13968 2.21965V2.22965C0.11968 2.74965 0.199679 3.22965 0.419679 3.82965C0.769679 4.76965 1.29968 5.64965 2.08968 6.61965C3.11968 7.77965 4.27968 8.67965 5.56968 9.29965L5.59968 9.30965C5.97968 9.47965 6.69968 9.79965 7.49968 9.84965H7.60968C8.13968 9.84965 8.53968 9.67965 8.86968 9.31965C8.98968 9.17965 9.11968 9.04965 9.22968 8.92965C9.31968 8.85965 9.37968 8.78965 9.43968 8.71965L9.51968 8.63965L9.53968 8.61965C9.95968 8.15965 9.95968 7.59965 9.51968 7.16965ZM9.16968 8.27965L9.06968 8.37965L9.05968 8.39965C9.00968 8.45965 8.96968 8.50965 8.91968 8.54965L8.88968 8.57965C8.76968 8.69965 8.62968 8.83965 8.48968 8.99965C8.25968 9.24965 7.99968 9.35965 7.60968 9.35965H7.52968C6.82968 9.30965 6.18968 9.02965 5.80968 8.85965L5.78968 8.84965C4.55968 8.25965 3.44968 7.39965 2.47968 6.29965C1.71968 5.37965 1.21968 4.53965 0.88968 3.65965C0.68968 3.10965 0.61968 2.70965 0.63968 2.25965C0.66968 1.96965 0.77968 1.73965 0.97968 1.55965L1.71968 0.819648C1.83968 0.699648 1.95968 0.649648 2.10968 0.649648C2.23968 0.649648 2.35968 0.709648 2.46968 0.809648L2.47968 0.819648C2.56968 0.899648 2.65968 0.989648 2.74968 1.07965L3.69968 2.02965C3.87968 2.20965 3.90968 2.34965 3.90968 2.42965C3.90968 2.50965 3.88968 2.62965 3.69968 2.79965L3.37968 3.11965C3.26968 3.23965 3.13968 3.36965 2.96968 3.50965L2.94968 3.52965L2.92968 3.55965C2.83968 3.67965 2.82968 3.78965 2.87968 3.94965L2.88968 3.98965L2.89968 4.02965C3.06968 4.39965 3.27968 4.73965 3.57968 5.11965C4.19968 5.87965 4.81968 6.44965 5.47968 6.85965L5.50968 6.87965C5.58968 6.91965 5.66968 6.95965 5.73968 6.99965C5.76968 7.02965 5.80968 7.04965 5.83968 7.05965C5.87968 7.07965 5.90968 7.08965 5.92968 7.10965L5.99968 7.15965H6.01968L6.04968 7.16965C6.10968 7.18965 6.14968 7.18965 6.17968 7.18965C6.27968 7.18965 6.36968 7.14965 6.45968 7.05965L7.20968 6.30965C7.32968 6.18965 7.43968 6.13965 7.57968 6.13965C7.72968 6.13965 7.86968 6.22965 7.94968 6.30965L9.16968 7.52965C9.40968 7.76965 9.41968 8.01965 9.16968 8.27965Z" fill="black"/>
+                                </svg>
+                                <a href="#" class="fs-md-14 fs-12 fw-700 ml-1 mr-1 header_item_none">8 800 000 00 00 </a>
+                                <svg  width="6" height="4" viewBox="0 0 6 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.254877 1.51188L2.41324 3.67021C2.73824 3.99521 3.26324 3.99521 3.58824 3.67021L5.74657 1.51188C6.27157 0.986881 5.89657 0.0869141 5.1549 0.0869141H0.83821C0.0965434 0.0869141 -0.270123 0.986881 0.254877 1.51188Z" fill="#282828"/>
+                                </svg>
+                            </li>
+                            <li class="mr-4">
+                                <img src="./images/Group_search.svg" alt="">
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <div class="mr-1">Наталья К.</div>
+                                <img class="header_doctor_img" src="./images/image_doctor.png" alt="">
+                                <svg class="ml-12" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.492652 0.498832C0.247652 0.743832 0.247652 1.13883 0.492652 1.38383L4.64765 5.53886C4.84265 5.73386 5.15765 5.73386 5.35265 5.53886L9.50766 1.38383C9.75266 1.13883 9.75266 0.743833 9.50766 0.498833C9.26266 0.253833 8.86766 0.253833 8.62266 0.498833L4.99765 4.11886L1.37265 0.493833C1.13265 0.253833 0.732652 0.253832 0.492652 0.498832Z" fill="#282828"/>
+                                </svg>            
+                            </li>
+                        </ul>
+                    </div>
+    
+                </header>
+    
+            </div>
+    
+    
+        </div>
+    </div>
+
+
+
+
+
+ <body class="content">
+
+
+    <div class="container container_page">
+
+
+        <div class="d-flex">
+        
+    
+            <div id="order_card" class="first_column p-0">
+            
+                <div class="order_card" style="position: sticky;">
+        
+        <div class="accordion" id="accordionExample">
+            <div class="">
+              <div class="">
+                <h2 class="mb-0">
+                  <div class="d-flex align-items-center my_collapse noselect" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    <img class="mr-12" src="./images/left_menu_1.svg" alt="">
+                    <div class="menu_collaps">Профиль</div>
+                  </div>
+                </h2>
+              </div>
+          
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <ul class="card-body-my">
+                  <li class="fs-md-14 fs-12 mb-12 cab_active">Личные данные</li>
+                  <li class="fs-md-14 fs-12 mb-12">Образование и опыт</li>
+                  <li class="fs-md-14 fs-12 mb-12">Сменить пароль</li>
+                  <li class="fs-md-14 fs-12 mb-12">Оповещения</li>
+                  <li class="fs-md-14 fs-12 mb-12">Настройки</li>
+                </ul>
+              </div>
+            </div>
+
+
+            <div class="">
+                <div class="">
+                  <h2 class="mb-0">
+                    <div class="d-flex align-items-center my_collapse noselect" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      <img class="mr-12" src="./images/left_menu_2.svg" alt="">
+                      <div class="menu_collaps">Мои пациенты</div>
+                    </div>
+                  </h2>
+                </div>
+            
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                  <ul class="card-body-my">
+                    <li class="fs-md-14 fs-12 mb-12 cab_active">Личные данные</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="">
+                <div class="">
+                  <h2 class="mb-0">
+                    <div class="d-flex align-items-center my_collapse noselect" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                      <img class="mr-12" src="./images/left_menu_3.svg" alt="">
+                      <div class="menu_collaps">Личный счет</div>
+                    </div>
+                  </h2>
+                </div>
+                <div id="collapse3" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                  <ul class="card-body-my">
+                    <li class="fs-md-14 fs-12 mb-12 cab_active">Личные данные</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="">
+                <div class="">
+                  <h2 class="mb-0">
+                    <div class="d-flex align-items-center my_collapse noselect" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                      <img class="mr-12" src="./images/left_menu_4.svg" alt="">
+                      <div class="menu_collaps">Мои отзывы</div>
+                    </div>
+                  </h2>
+                </div>
+                <div id="collapse4" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                  <ul class="card-body-my">
+                    <li class="fs-md-14 fs-12 mb-12 cab_active">Личные данные</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="">
+                <div class="">
+                  <h2 class="mb-0">
+                    <div class="d-flex align-items-center my_collapse noselect" data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                      <img class="mr-12" src="./images/left_menu_5.svg" alt="">
+                      <div class="menu_collaps">Мои публикации</div>
+                    </div>
+                  </h2>
+                </div>
+                <div id="collapse5" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                  <ul class="card-body-my">
+                    <li class="fs-md-14 fs-12 mb-12 cab_active">Личные данные</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="">
+                <div class="">
+                  <h2 class="mb-0">
+                    <div class="d-flex align-items-center my_collapse noselect" data-toggle="collapse" data-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                      <img class="mr-12" src="./images/left_menu_6.svg" alt="">
+                      <div class="menu_collaps">Выход</div>
+                    </div>
+                  </h2>
+                </div>
+                <div id="collapse6" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                  <ul class="card-body-my">
+                    <li class="fs-md-14 fs-12 mb-12 cab_active">Личные данные</li>
+                  </ul>
+                </div>
+              </div>
+
+          
+   
+          </div>
+
+
+          <div class="d-flex align-items-center menu_btn_bottom">
+            <svg class="mr-2" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18.0233 0.333008H5.31C4.22 0.333008 3.33333 1.21967 3.33333 2.30967V4.99967H1.97667C0.886667 4.99967 0 5.88634 0 6.97601V14.023C0 15.113 0.886667 15.9997 1.97667 15.9997H4L3.5 19.2993C3.5 19.437 3.75186 19.644 4.21333 19.644C4 19.7993 4.293 19.6663 4.33333 19.6663C4.42533 19.6663 4.51567 19.628 4.58 19.5573L7.814 15.9997H14.69C15.78 15.9997 16.6667 15.113 16.6667 14.0233V11.333H18.0233C19.1133 11.333 20 10.4463 20 9.35634V2.30967C20 1.21967 19.1133 0.333008 18.0233 0.333008ZM16 14.0233C16 14.7453 15.4123 15.333 14.69 15.333H7.66667C7.57267 15.333 7.483 15.3727 7.42 15.442L4.66667 18.471V15.6663C4.66667 15.4823 4.51767 15.333 4.33333 15.333H1.97667C1.25433 15.333 0.666667 14.7453 0.666667 14.023V6.97601C0.666667 6.25401 1.25433 5.66634 1.97667 5.66634H3.66667H14.69C15.4123 5.66634 16 6.25401 16 6.97634V10.9997V14.0233ZM19.3333 9.35634C19.3333 10.0787 18.7457 10.6663 18.0233 10.6663H16.6667V6.97634C16.6667 5.88634 15.78 4.99967 14.69 4.99967H4V2.30967C4 1.58734 4.58767 0.999674 5.31 0.999674H18.0233C18.7457 0.999674 19.3333 1.58734 19.3333 2.30967V9.35634Z" fill="#9BB3DE"/>
+            </svg>
+                 
+            <div class="fs-md-14 fs-12">Онлайн-чат с МО</div>
+          </div>
+
+          <div class="d-flex align-items-center menu_btn_bottom">
+            <svg class="mr-2" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.5208 3.22395L17.0286 0.719925C16.6836 0.371656 15.9984 0.493361 15.5025 0.986974L13.2173 3.26443L10.0735 0H0.28125V20H15.6876V8.29486L19.25 4.74678C19.7421 4.25317 19.8671 3.57021 19.5208 3.22395ZM10.3358 2.60938L12.0676 4.40957L11.1196 5.35481H10.3358V2.60938ZM10.6959 12.3049L7.24816 13.7007L6.50786 12.9559L7.91628 9.51318L10.6959 12.3049ZM14.0649 18.3788H1.9024V1.62115H9.11976V6.57036H9.89979L8.97593 7.48969H3.63344V8.30014H8.16397L7.43147 9.02811L6.68539 10.8545H3.63344V11.6657H6.35473L5.30916 14.219H3.63319V15.0289H12.3382V14.219H7.6437L11.1754 12.7882L12.3017 11.6657H12.3369V11.6305L14.0634 9.91098V18.3791H14.0649V18.3788Z" fill="#9BB3DE"/>
+            </svg>
+            <div class="fs-md-14 fs-12">Посмотреть расписание</div>
+          </div>
+
+          <div class="d-flex align-items-center menu_btn_bottom">
+            <svg class="mr-2" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_1119_3759)">
+                <path d="M17.6562 2.08352e-06H2.34375C1.72215 2.08352e-06 1.12601 0.246932 0.686468 0.686471C0.24693 1.12601 0 1.72215 0 2.34375L0 12.4328C0 13.0544 0.24693 13.6506 0.686468 14.0901C1.12601 14.5296 1.72215 14.7766 2.34375 14.7766H5.98125C6.02269 14.7766 6.06243 14.793 6.09174 14.8223C6.12104 14.8516 6.1375 14.8914 6.1375 14.9328V18.9063C6.13748 19.1226 6.20162 19.3341 6.32181 19.5139C6.44199 19.6938 6.61281 19.834 6.81268 19.9168C7.01255 19.9996 7.23247 20.0213 7.44465 19.9791C7.65683 19.9369 7.85172 19.8327 8.00469 19.6797L12.8609 14.8234C12.8755 14.809 12.8929 14.7975 12.9119 14.7897C12.9309 14.7819 12.9513 14.778 12.9719 14.7781H17.6594C18.281 14.7781 18.8771 14.5312 19.3167 14.0917C19.7562 13.6521 20.0031 13.056 20.0031 12.4344V2.34375C20.0031 2.0357 19.9424 1.73068 19.8244 1.44612C19.7064 1.16155 19.5335 0.903043 19.3156 0.685365C19.0976 0.467687 18.8388 0.295112 18.5541 0.177512C18.2694 0.0599112 17.9643 -0.000408648 17.6562 2.08352e-06ZM19.0625 12.4328C19.0625 12.8058 18.9143 13.1635 18.6506 13.4272C18.3869 13.6909 18.0292 13.8391 17.6562 13.8391H12.9688C12.6798 13.837 12.4017 13.9493 12.1953 14.1516L7.34375 19.0156C7.3219 19.0377 7.29397 19.0527 7.26354 19.0588C7.23311 19.0649 7.20156 19.0618 7.17289 19.0499C7.14423 19.038 7.11976 19.0178 7.1026 18.992C7.08545 18.9661 7.07638 18.9357 7.07656 18.9047V14.9328C7.07656 14.6427 6.96133 14.3645 6.75621 14.1594C6.55109 13.9543 6.27289 13.8391 5.98281 13.8391H2.34375C1.97079 13.8391 1.6131 13.6909 1.34938 13.4272C1.08566 13.1635 0.9375 12.8058 0.9375 12.4328V2.34375C0.9375 1.97079 1.08566 1.61311 1.34938 1.34938C1.6131 1.08566 1.97079 0.937502 2.34375 0.937502H17.6562C18.0292 0.937502 18.3869 1.08566 18.6506 1.34938C18.9143 1.61311 19.0625 1.97079 19.0625 2.34375V12.4328Z" fill="#9BB3DE"/>
+                <path d="M17.2734 0.500002H2.72655C2.13603 0.500002 1.5697 0.734585 1.15214 1.15214C0.734583 1.5697 0.5 2.13604 0.5 2.72656L0.5 12.3111C0.5 12.9016 0.734583 13.468 1.15214 13.8855C1.5697 14.3031 2.13603 14.5377 2.72655 14.5377H6.18216C6.22153 14.5377 6.25929 14.5533 6.28713 14.5812C6.31496 14.609 6.3306 14.6467 6.3306 14.6861V18.4609C6.33059 18.6664 6.39152 18.8673 6.50569 19.0382C6.61986 19.2091 6.78215 19.3423 6.97202 19.4209C7.16189 19.4996 7.37082 19.5201 7.57239 19.48C7.77396 19.4399 7.95911 19.341 8.10442 19.1956L12.7178 14.5822C12.7317 14.5685 12.7482 14.5576 12.7662 14.5502C12.7843 14.5428 12.8037 14.5391 12.8232 14.5392H17.2763C17.8669 14.5392 18.4332 14.3046 18.8507 13.887C19.2683 13.4695 19.5029 12.9031 19.5029 12.3126V2.72656C19.5029 2.43391 19.4452 2.14414 19.3331 1.8738C19.221 1.60347 19.0568 1.35789 18.8497 1.15109C18.6426 0.9443 18.3968 0.780356 18.1263 0.668635C17.8559 0.556915 17.566 0.499612 17.2734 0.500002ZM18.6093 12.3111C18.6093 12.6654 18.4686 13.0052 18.218 13.2558C17.9675 13.5063 17.6277 13.6471 17.2734 13.6471H12.8203C12.5457 13.6451 12.2816 13.7518 12.0855 13.9439L7.47653 18.5648C7.45577 18.5857 7.42925 18.6 7.40034 18.6058C7.37143 18.6116 7.34145 18.6086 7.31422 18.5973C7.28699 18.586 7.26375 18.5669 7.24745 18.5423C7.23115 18.5177 7.22254 18.4889 7.22271 18.4594V14.6861C7.22271 14.4105 7.11323 14.1463 6.91837 13.9514C6.72351 13.7565 6.45922 13.6471 6.18365 13.6471H2.72655C2.37224 13.6471 2.03244 13.5063 1.78191 13.2558C1.53137 13.0052 1.39062 12.6654 1.39062 12.3111V2.72656C1.39062 2.37224 1.53137 2.03244 1.78191 1.78191C2.03244 1.53137 2.37224 1.39062 2.72655 1.39062H17.2734C17.6277 1.39062 17.9675 1.53137 18.218 1.78191C18.4686 2.03244 18.6093 2.37224 18.6093 2.72656V12.3111Z" fill="#9BB3DE"/>
+                <g clip-path="url(#clip1_1119_3759)">
+                <path d="M6.90958 10.2173C6.48042 9.76143 6.25 9.25018 6.25 8.42143C6.25 6.9631 7.27375 5.65602 8.7625 5.00977L9.13458 5.58393C7.745 6.3356 7.47333 7.31102 7.365 7.92602C7.58875 7.81018 7.88167 7.76977 8.16875 7.79643C8.92042 7.86602 9.51292 8.4831 9.51292 9.25018C9.51292 9.63696 9.35927 10.0079 9.08578 10.2814C8.81229 10.5549 8.44136 10.7085 8.05458 10.7085C7.6075 10.7085 7.18 10.5043 6.90958 10.2173ZM11.0763 10.2173C10.6471 9.76143 10.4167 9.25018 10.4167 8.42143C10.4167 6.9631 11.4404 5.65602 12.9292 5.00977L13.3013 5.58393C11.9117 6.3356 11.64 7.31102 11.5317 7.92602C11.7554 7.81018 12.0483 7.76977 12.3354 7.79643C13.0871 7.86602 13.6796 8.4831 13.6796 9.25018C13.6796 9.63696 13.5259 10.0079 13.2524 10.2814C12.979 10.5549 12.608 10.7085 12.2213 10.7085C11.7742 10.7085 11.3467 10.5043 11.0763 10.2173Z" fill="#9BB3DE"/>
+                </g>
+                </g>
+                <defs>
+                <clipPath id="clip0_1119_3759">
+                <rect width="20" height="20" fill="white"/>
+                </clipPath>
+                <clipPath id="clip1_1119_3759">
+                <rect width="10" height="10" fill="white" transform="translate(5 3)"/>
+                </clipPath>
+                </defs>
+            </svg>
+            <div class="fs-md-14 fs-12">Оставить отзыв</div>
+          </div>
+
+                    
+        
+        
+        
+                </div>
+            </div>
+
+
+
+            
+       
+    <div class="left_m_t">
+
+        <div class="page_h mb-3 fw-700">Личные данные</div>
+
+        <div class='order_container'>
+            
+            <div class="second_column">
+                
+
+                <div class="d-flex first_block_info">
+
+                    <div class="profil_img_container">
+                        <img class="w-100 h-100" src="./images/image_profil.png" alt="">
+                        <div class="img_update d-flex align-items-center">
+                            <img src="./images/Vector_update.svg" alt="">
+                            <div class="ml-12 fs-md-14 fs-12">Обновить фотографию</div>
+                        </div>
+                    </div>
+
+
+                    <div>
+                        <div class="fs-md-24 fs-18 mb-4 fw-700">Кузьмина Наталья Алексеевна</div>
+                        <div class="info_items">
+
+                            <div>
+                                <div class="mb-3">
+                                    <div class="fs-md-12 fs-10 color_93 mb-1">Пол</div>
+                                    <div class="fs-md-18 fs-16 fw-500">Женский</div>
+                                </div>
+                                <div class="mb-3 mt-1">
+                                    <div class="fs-md-12 fs-10 color_93 mb-1">Дата рождения</div>
+                                    <div class="fs-md-18 fs-16 fw-500">16.05.1960г.</div>
+                                </div>
+                                
+                                <div class="change_first">
+                                  <div class="mb-3">
+                                    <div class="fs-md-12 fs-10 mb-1">Стаж работы, лет</div>
+                                    <input placeholder="Стаж работы" class="my_input w-100" type="text" value="34">
+                                  </div>
+                                  <div class="mb-3 mt-1">
+                                    <div class="fs-md-12 fs-10 mb-1">Категория</div>
+                                    <div class="my_option d-flex justify-content-between align-items-center">
+                                      <div>Врач высшей категории</div>
+                                      <svg width="6" height="4" viewBox="0 0 6 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.254877 1.51188L2.41324 3.67021C2.73824 3.99521 3.26324 3.99521 3.58824 3.67021L5.74657 1.51188C6.27157 0.986881 5.89657 0.0869141 5.1549 0.0869141H0.83821C0.0965434 0.0869141 -0.270123 0.986881 0.254877 1.51188Z" fill="#282828"/>
+                                      </svg>
+                                    </div>
+                                  </div>
+
+                                  <div class="mb-3 mt-1">
+                                    <div class="fs-md-12 fs-10 mb-1">Специализация</div>
+                                    <div class="my_option d-flex justify-content-between align-items-center">
+                                      <div>Невролог, психотерапевт</div>
+                                      <svg width="6" height="4" viewBox="0 0 6 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.254877 1.51188L2.41324 3.67021C2.73824 3.99521 3.26324 3.99521 3.58824 3.67021L5.74657 1.51188C6.27157 0.986881 5.89657 0.0869141 5.1549 0.0869141H0.83821C0.0965434 0.0869141 -0.270123 0.986881 0.254877 1.51188Z" fill="#282828"/>
+                                      </svg>
+                                    </div>
+                                  </div>
+
+                                  <div class="mb-3 mt-1">
+                                    <div class="fs-md-12 fs-10 mb-1">Ученая степень</div>
+                                    <div class="my_option d-flex justify-content-between align-items-center">
+                                      <div>Кандидат медицинских наук</div>
+                                      <svg width="6" height="4" viewBox="0 0 6 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.254877 1.51188L2.41324 3.67021C2.73824 3.99521 3.26324 3.99521 3.58824 3.67021L5.74657 1.51188C6.27157 0.986881 5.89657 0.0869141 5.1549 0.0869141H0.83821C0.0965434 0.0869141 -0.270123 0.986881 0.254877 1.51188Z" fill="#282828"/>
+                                      </svg>
+                                    </div>
+                                  </div>
+
+
+                                  <div class="d-flex">
+                                    <div class="my_btn my_btn_red mr-4">
+                                        сохранить
+                                    </div>
+                                    <div class="my_btn">
+                                      отменить
+                                  </div>
+                                  </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="d-flex align-items-center mb-1 mt_50">
+                    <div class="fs-md-24 fs-18 fw-700">Место работы</div>
+                    <div class="fs-md-12 fs-10 color_93" style="text-decoration: underline; margin-left: 30px;">изменить</div>
+                </div>
+
+                <div class="mt-3 mb-1">
+                    <div class="d-flex align-items-center mb-2">
+                        <div class="fs-md-16 fs-14 mr-4 fw-700">Тип приема</div>
+                    </div>
+
+                    <div class="d-flex">
+                      <div class="checkbox mr-4 noselect">
+                          <input class="custom-checkbox" type="checkbox" id="color-1">
+                          <label class="fs-md-16 fs-14  d-flex align-items-center" for="color-1">в клинике</label>
+                      </div>
+                      <div class="checkbox ml-1 mr-4 noselect">
+                        <input class="custom-checkbox" type="checkbox" id="color-2">
+                        <label class="fs-md-16 fs-14  d-flex align-items-center" for="color-2">онлайн</label>
+                    </div>
+                    <div class="checkbox ml-1 noselect">
+                      <input class="custom-checkbox" type="checkbox" id="color-3">
+                      <label class="fs-md-16 fs-14  d-flex align-items-center" for="color-3">на дому</label>
+                  </div>
+                    </div>
+
+
+                    <div class="d-flex mt-3">
+                      <div class="my_btn my_btn_red mr-4">
+                          сохранить
+                      </div>
+                      <div class="my_btn">
+                        отменить
+                    </div>
+                    </div>
+
+
+                </div>
+
+                <div class="mt-3">
+                    <div class="adress_table">
+                        <ul class="grid_3_table pl-3">
+                            <li class="fs-md-16 fs-14 fw-700">Клиника</li>
+                            <li class="fs-md-16 fs-14 fw-700">Адрес</li>
+                            <li class="fs-md-16 fs-14 fw-700">Специализация</li>
+                        </ul>
+
+                        <div class="blue_line"></div>
+                        <ul class="grid_3_table pl-3">
+                            <li class="fs-md-16 fs-14">Лечебно-диагностический центр на Вернадского (ЛДЦ МРТ) </li>
+                            <li class="fs-md-16 fs-14">Москва, просп. Вернадского, д. 6</li>
+                            <li class="fs-md-16 fs-14">Невролог, психотерапевт </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+                <div class="clinick_table">
+                  <div class="d-flex mb-3">
+                    <div class="clinick_table_inputs_container_big mr-2">
+                      <div class="position_relative">
+                        <div class="fs-md-12 fs-10 mb-1">Клиника</div>
+                        <input placeholder="Стаж работы" class="my_input my_input_pad_right w-100" type="text" value="Лечебно-диагностический центр на Вернадского (ЛД">
+                        <svg class="svg" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M1 1L13 13" stroke="#BBBBBB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M1 13L13 1" stroke="#BBBBBB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                      </div>
+                    </div>
+
+                    <div class="clinick_table_inputs_container_sm">
+                      <div class="position_relative">
+                        <div class="fs-md-12 fs-10 mb-1">Улица</div>
+                        <input placeholder="Стаж работы" class="my_input my_input_pad_right w-100" type="text" value="Вернадского проспект">
+                        <svg class="svg" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M1 1L13 13" stroke="#BBBBBB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M1 13L13 1" stroke="#BBBBBB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="clinick_table_inputs_container_big mb-1">
+                    <ul class="grid_3">
+                      <li>
+                        <div class="position_relative">
+                          <div class="fs-md-12 fs-10 mb-1">Дом</div>
+                          <input placeholder="Стаж работы" class="my_input my_input_pad_right w-100" type="text" value="6">
+                          <svg class="svg" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L13 13" stroke="#BBBBBB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M1 13L13 1" stroke="#BBBBBB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="position_relative">
+                          <div class="fs-md-12 fs-10 mb-1">Корпус</div>
+                          <input placeholder="Стаж работы" class="my_input my_input_pad_right w-100" type="text" value="4">
+                          <svg class="svg" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L13 13" stroke="#BBBBBB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M1 13L13 1" stroke="#BBBBBB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="position_relative">
+                          <div class="fs-md-12 fs-10 mb-1">Строение</div>
+                          <input placeholder="Стаж работы" class="my_input my_input_pad_right w-100" type="text" value="3">
+                          <svg class="svg" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L13 13" stroke="#BBBBBB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M1 13L13 1" stroke="#BBBBBB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="clinick_table_inputs_container_big mt-3 mb-1">
+                      <div class="fs-md-12 fs-10 mb-1">Категория</div>
+                      <div class="my_option d-flex justify-content-between align-items-center">
+                        <div>Врач высшей категории</div>
+                        <svg width="6" height="4" viewBox="0 0 6 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M0.254877 1.51188L2.41324 3.67021C2.73824 3.99521 3.26324 3.99521 3.58824 3.67021L5.74657 1.51188C6.27157 0.986881 5.89657 0.0869141 5.1549 0.0869141H0.83821C0.0965434 0.0869141 -0.270123 0.986881 0.254877 1.51188Z" fill="#282828"></path>
+                        </svg>
+                      </div>
+                  </div>
+
+                  <div class="d-flex mt-3">
+                    <div class="my_btn my_btn_red mr-4">
+                        сохранить
+                    </div>
+                    <div class="my_btn">
+                      отменить
+                  </div>
+                  </div>
+
+                </div>
+
+                
+                <div class="fs-md-16 fs-14 add_clinick">+ добавить клинику</div>
+
+                <div class="d-flex align-items-center mb-1 mt_50 mb-3">
+                    <div class="fs-md-24 fs-18 fw-700">Контакты</div>
+                </div>
+
+                <div class="contacts_table">
+
+                  <div class="d-flex">
+                    <div class="first_column mr-4">
+                      <div class="fs-md-18 fs-16 fw-500 mb-2">Изменение номера: +7 (922) 000-00-00</div>
+                      <div class="fs-md-12 fs-10 mb-1">Новый номер телефона</div>
+                      
+                      <div class="d-flex align-items-center">
+                        <input type="text" class="my_input mr-3" placeholder="+7 (___) ___-__-__">
+                        <div class="fs-md-12 fs-10">На этот номер будет отправлен код подтверждения </div>
+                      </div>
+
+                      <div class="d-flex mt-2 align-items-center">
+                        <div class="my_btn my_btn_red mr-4">
+                            сохранить
+                        </div>
+                        <div class="color_93 fs-12" style="cursor: pointer;">
+                          ОТМЕНИТЬ
+                        </div>
+                      </div>
+                     
+                    </div>
+
+
+                    <div class="second_column">
+                      <div class="fs-md-18 fs-16 fw-500 mb-2">Изменение адреса электронной почты: proba@yandex.ru</div>
+                      <div class="fs-md-12 fs-10 mb-1">Укажите электронную почту</div>
+                      
+                      <div class="d-flex align-items-center">
+                        <input type="text" class="my_input mr-3" placeholder="email">
+                        <div class="fs-md-12 fs-10">На этот адрес будет отправлено письмо для подтверждения электронной почты</div>
+                      </div>
+
+                      <div class="d-flex mt-2 align-items-center">
+                        <div class="my_btn my_btn_red mr-4">
+                          отправить письмо
+                        </div>
+                        <div class="color_93 fs-12" style="cursor: pointer;">
+                          ОТМЕНИТЬ
+                        </div>
+                      </div>
+                     
+                    </div>
+                  </div>
+
+                </div>
+                
+
+            
+           
+                
+            </div>
+
+
+
+        </div>
+            
+
+    </div>
+
+
+   
+
+    </div>
+
+
+
+    
+
+
+
+
+
+
+
+    </div>
+
+
+ </body>
+
+ </div>
+
+
+
+    <footer>
+        <div class="container">
+
+            <ul class="columns">
+                <ul class="column">
+                    <li class="h mb-3 fs-md-24 fs-20 fw-700">Пациенту</li>
+                    <li><a href="#">Врачи</a></li>
+                    <li><a href="#">Медучреждения</a></li>
+                    <li><a href="#">Лаборатория</a></li>
+                    <li><a href="#">Диагностика</a></li>
+                    <li><a href="#">Аптека</a></li>
+                    <li><a href="#">Мед. страхование</a></li>
+                    <li><a href="#">Юр. консультации</a></li>
+                    <li><a href="#">Благотворительный фонд</a></li>
+                    <li><a href="#">Медкарта пациента</a></li>
+                    <li><a href="#">Медицинская библиотека</a></li>
+                </ul>
+                <ul class="column">
+                    <li class="h mb-3 fs-md-24 fs-20 fw-700">Медперсоналу и юр. лицам</li>
+                    <li><a href="#">Личный кабинет</a></li>
+                    <li><a href="#">Регистрация</a></li>
+                    <ul class="mt-4">
+                        <li class="h mb-3 fs-md-24 fs-20 fw-700">Помощь</li>
+                        <li><a href="#">Правила сервиса</a></li>
+                        <li><a href="#">Вопрос-ответ</a></li>
+                        <li><a href="#">Служба поддержки</a></li>
+                    </ul>
+                    
+                </ul>
+                <ul class="column">
+                    <li class="h mb-3 fs-md-24 fs-20 fw-700">Условия использования</li>
+                    <li><a href="#">Пользовательское соглашение</a></li>
+                    <li class="mb-1"><a href="#">Обработка персональных данных</a></li>
+                    <li class="mt-4">
+                        <a href="#" class="d-flex">
+                            <svg class="mr-3" width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19.2418 1.20967C19.1065 0.952045 18.8398 0.814795 18.5672 0.81892C18.2597 0.811795 17.9646 0.989545 17.848 1.29442L16.7402 4.22129C16.5943 4.60792 16.7893 5.03955 17.176 5.18579C17.2626 5.21917 17.3522 5.23492 17.4403 5.23492C17.7426 5.23492 18.0272 5.05042 18.1405 4.75117L18.6745 3.3393L20.2397 6.30142C19.7136 6.13042 19.1537 6.03554 18.5717 6.03554C16.2936 6.03554 14.3432 7.45379 13.5475 9.45217C12.1127 8.87542 10.9896 9.19192 10.4252 9.44954C9.62871 7.45267 7.67909 6.03554 5.40134 6.03554C4.80771 6.03554 4.23846 6.13492 3.70446 6.31192L5.27496 3.33892L5.80934 4.7508C5.92259 5.04967 6.20759 5.23454 6.50946 5.23454C6.59721 5.23454 6.68684 5.21879 6.77384 5.18542C7.16009 5.03917 7.35509 4.60755 7.20921 4.22092L6.10146 1.29405C5.98596 0.989545 5.69159 0.811795 5.38409 0.818545C5.11071 0.81367 4.84409 0.951295 4.70759 1.2093L0.803086 8.60017C0.800086 8.60617 0.800836 8.61217 0.797836 8.61779C0.290086 9.44205 -0.00878906 10.408 -0.00878906 11.4457C-0.00878906 14.4288 2.41784 16.8554 5.40096 16.8554C8.38446 16.8554 10.8111 14.4288 10.8111 11.4457C10.8111 11.2762 10.801 11.1089 10.7856 10.9428C10.8253 10.924 10.8666 10.9098 10.9037 10.8832C10.9131 10.8775 11.8116 10.2749 13.189 10.9259C13.1728 11.0973 13.1627 11.2705 13.1627 11.4457C13.1627 14.4288 15.5893 16.8554 18.5721 16.8554C21.5556 16.8554 23.9822 14.4288 23.9822 11.4457C23.9822 10.3184 23.6346 9.27067 23.0421 8.40292L19.2418 1.20967ZM5.40059 15.3588C3.24246 15.3588 1.48709 13.603 1.48709 11.4453C1.48709 9.28754 3.24246 7.53217 5.40059 7.53217C7.55834 7.53217 9.31409 9.28754 9.31409 11.4453C9.31409 13.603 7.55834 15.3588 5.40059 15.3588ZM18.5713 15.3588C16.4136 15.3588 14.6582 13.603 14.6582 11.4453C14.6582 9.28754 16.4136 7.53217 18.5713 7.53217C19.8985 7.53217 21.0688 8.19929 21.7772 9.21179L21.823 9.29917C21.8391 9.33029 21.8623 9.35392 21.8822 9.38167C22.2587 9.98242 22.4848 10.6859 22.4848 11.4449C22.4852 13.603 20.7291 15.3588 18.5713 15.3588Z" fill="white"/>
+                            </svg>   
+                            <div>Версия для слабовидящих</div>
+                         </a>
+                    </li>
+                </ul>
+                <ul class="column">
+                    <li class="h mb-3 fs-md-24 fs-20 fw-700">Связаться с нами</li>
+                    <li class="mb-3"><a href="#" class="d-flex align-items-center">
+                        <img class="mr-12" src="./images/footer_1.svg" alt="иконка футера">
+                        <div class="fw-200">Телефон: 8 (100) 000-00-00</div>
+                    </a></li>
+                    <li class="mb-3 mt-1"><a href="#" class="d-flex align-items-center">
+                        <img class="mr-12" src="./images/footer_2.svg" alt="иконка футера">
+                        <div class="fw-200">Email: no-reply@medars.ru </div>
+                    </a></li>
+                    <li class="mb-3 mt-1"><a href="#" class="d-flex align-items-center">
+                        <img class="mr-12" src="./images/footer_3.svg" alt="иконка футера">
+                        <div class="fw-200">Симферополь , ул. Лермонтова 21, 3 этаж, офис 4
+                        </div>
+                    </a></li>
+                    
+                </ul>
+            </ul>
+            
+        <div class="d-lg-flex d-block justify-content-between align-items-center">
+           <div class="d-flex align-items-center mr-1">
+                <div class="footer_age mr-1"><img src="./images/footer_4.svg" alt=""></div>
+                <div class="fs-md-14 fs-12 color_A9">Информация, представленная на сайте, не может быть использована для постановки диагноза, назначения лечения и не заменяет прием врача. </div>
+           </div>
+
+            <a href="#" class="color_A9">© ООО "Медарс", 2022</a>
+        </div>
+    </footer>
+    
+</div>
+
+
+
+</html>
+
+
