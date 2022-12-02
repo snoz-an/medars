@@ -44,7 +44,7 @@
 
     <div>
 
-    <div class="header_container">
+      <div class="header_container">
         <div class="fixed">
             <div class="container" style="position: relative;">
                 <header>
@@ -62,11 +62,40 @@
                                 <img src="./images/medars-logo.svg" alt="">
                             </li>
                             <div class="d-flex mt-2">
-                            <li class="none d-flex align-items-center">
+                            <li class="none d-lg-flex d-none align-items-center ">
                                 <div class="fs-md-16 fs-14">Москва г.</div>
                                 <svg class="mt-1 ml-1" width="6" height="4" viewBox="0 0 6 4" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M0.254877 1.51188L2.41324 3.67021C2.73824 3.99521 3.26324 3.99521 3.58824 3.67021L5.74657 1.51188C6.27157 0.986881 5.89657 0.0869141 5.1549 0.0869141H0.83821C0.0965434 0.0869141 -0.270123 0.986881 0.254877 1.51188Z" fill="#282828"/>
                                 </svg>
+                            </li>
+
+                            <li class="none d-lg-none header_profil d-flex align-items-center justify-content-center position_relative">
+                              <svg width="18" height="21" viewBox="0 0 18 21" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <rect width="18" height="21" fill="url(#pattern0)"/>
+                                <defs>
+                                <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlink:href="#image0_1541_825" transform="scale(0.0555556 0.047619)"/>
+                                </pattern>
+                                <image id="image0_1541_825" width="18" height="21" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAVCAYAAABLy77vAAABm0lEQVQ4jaXTLWiWURjG8et5cZNNmMOgMhQ0WBxosQ1FRFyxiKBgMAiGsbRiXBAEowzFsLKgxWQwqE1EcEHF4FcQP9j8QFB0Ez8Qf4Yd8MXtefaqVzvnvu7/Ofd97pPUCDtwAY/wGJewq87fqoGMJplOsjHJVJLJJH1JbmC8DvYnZDd+YmyJ2FELOtgJ6DouN8Qnca8T0GccaYjvK7fqad9fqkfdSeYbzppr8zWCniQZagDtTPK2qqqPDZ4EY6W8bUvENuEdTjVCinkFruEDRkvyBhzDa9xG77KgAuvGacz5rS84h1XLJa/GSdwsU7wZKzGI7egp63FMY2pR+egvX+ENJnC/3OA89mMPTuAZPuEMbuE7httBE5jFurY+jeBOmXKYKb6B4qlwseR1B72Yx/Gakrvq+oK1+IrDwd5y6pqOXmIx7ComW0kGkzyvqur9v4CS3E0y2EqyPsnsP0KS5FWSgVaSriTVf4B+JAt/7WmSrcsOWr2Gkryo0J/kYZKXSc4mmekQ0JdkOMlIkgNJEmzBFXzzd3qAQ0nyCyEGyCcnxdbOAAAAAElFTkSuQmCC"/>
+                                </defs>
+                              </svg>
+                              
+                              <div class="headeer_menu_mob">
+                                <div class="item">
+                                  <div class="mb-3"><a href="#">Профиль</a></div>
+                                  <div class="mb-3"><a href="#">Уведомления</a></div>
+                                  <div><a href="#">Настройки</a></div>
+                                </div>
+
+                                <div class="item_2 d-flex justify-content-between align-items-center">
+                                  <a href="#" class="">Выйти</a>
+                                  <img src="./images/выход 1.svg" alt="">
+                                </div>
+
+
+                                
+                              </div>
+                              
                             </li>
                            
                             </div>
@@ -100,8 +129,34 @@
     
     
         </div>
+      
     </div>
 
+
+    <div class="fixed_bottom d-lg-none d-block">
+      <div class="fixed_2">
+        <div class="container" style="position: relative;">
+          <div class="d-flex justify-content-between">
+            <a href="#" class="d-flex align-items-center justify-content-between item">
+                <img src="./images/bottom_fixed_1.svg" alt="">
+                <div class="fs-10">Уведомления</div>    
+            </a>
+            <a href="#" class="d-flex align-items-center justify-content-between item">
+              <img src="./images/bottom_fixed_2.svg" alt="">
+              <div class="fs-10">Чат с МО</div>    
+            </a>
+            <a href="#"class="d-flex align-items-center justify-content-between item">
+              <img src="./images/bottom_fixed_3.svg" alt="">
+              <div class="fs-10">Расписание</div>    
+            </a>
+            <a href="#" class="d-flex align-items-center justify-content-between item">
+              <img src="./images/bottom_fixed_4.svg" alt="">
+              <div class="fs-10">Пациенты</div>    
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
 
@@ -422,76 +477,87 @@
 
 
 
-    <footer>
-        <div class="container">
+ <footer>
+  <div class="container">
 
-            <ul class="columns">
-                <ul class="column">
-                    <li class="h mb-3 fs-md-24 fs-20 fw-700">Пациенту</li>
-                    <li><a href="#">Врачи</a></li>
-                    <li><a href="#">Медучреждения</a></li>
-                    <li><a href="#">Лаборатория</a></li>
-                    <li><a href="#">Диагностика</a></li>
-                    <li><a href="#">Аптека</a></li>
-                    <li><a href="#">Мед. страхование</a></li>
-                    <li><a href="#">Юр. консультации</a></li>
-                    <li><a href="#">Благотворительный фонд</a></li>
-                    <li><a href="#">Медкарта пациента</a></li>
-                    <li><a href="#">Медицинская библиотека</a></li>
-                </ul>
-                <ul class="column">
-                    <li class="h mb-3 fs-md-24 fs-20 fw-700">Медперсоналу и юр. лицам</li>
-                    <li><a href="#">Личный кабинет</a></li>
-                    <li><a href="#">Регистрация</a></li>
-                    <ul class="mt-4">
-                        <li class="h mb-3 fs-md-24 fs-20 fw-700">Помощь</li>
-                        <li><a href="#">Правила сервиса</a></li>
-                        <li><a href="#">Вопрос-ответ</a></li>
-                        <li><a href="#">Служба поддержки</a></li>
-                    </ul>
-                    
-                </ul>
-                <ul class="column">
-                    <li class="h mb-3 fs-md-24 fs-20 fw-700">Условия использования</li>
-                    <li><a href="#">Пользовательское соглашение</a></li>
-                    <li class="mb-1"><a href="#">Обработка персональных данных</a></li>
-                    <li class="mt-4">
-                        <a href="#" class="d-flex">
-                            <svg class="mr-3" width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M19.2418 1.20967C19.1065 0.952045 18.8398 0.814795 18.5672 0.81892C18.2597 0.811795 17.9646 0.989545 17.848 1.29442L16.7402 4.22129C16.5943 4.60792 16.7893 5.03955 17.176 5.18579C17.2626 5.21917 17.3522 5.23492 17.4403 5.23492C17.7426 5.23492 18.0272 5.05042 18.1405 4.75117L18.6745 3.3393L20.2397 6.30142C19.7136 6.13042 19.1537 6.03554 18.5717 6.03554C16.2936 6.03554 14.3432 7.45379 13.5475 9.45217C12.1127 8.87542 10.9896 9.19192 10.4252 9.44954C9.62871 7.45267 7.67909 6.03554 5.40134 6.03554C4.80771 6.03554 4.23846 6.13492 3.70446 6.31192L5.27496 3.33892L5.80934 4.7508C5.92259 5.04967 6.20759 5.23454 6.50946 5.23454C6.59721 5.23454 6.68684 5.21879 6.77384 5.18542C7.16009 5.03917 7.35509 4.60755 7.20921 4.22092L6.10146 1.29405C5.98596 0.989545 5.69159 0.811795 5.38409 0.818545C5.11071 0.81367 4.84409 0.951295 4.70759 1.2093L0.803086 8.60017C0.800086 8.60617 0.800836 8.61217 0.797836 8.61779C0.290086 9.44205 -0.00878906 10.408 -0.00878906 11.4457C-0.00878906 14.4288 2.41784 16.8554 5.40096 16.8554C8.38446 16.8554 10.8111 14.4288 10.8111 11.4457C10.8111 11.2762 10.801 11.1089 10.7856 10.9428C10.8253 10.924 10.8666 10.9098 10.9037 10.8832C10.9131 10.8775 11.8116 10.2749 13.189 10.9259C13.1728 11.0973 13.1627 11.2705 13.1627 11.4457C13.1627 14.4288 15.5893 16.8554 18.5721 16.8554C21.5556 16.8554 23.9822 14.4288 23.9822 11.4457C23.9822 10.3184 23.6346 9.27067 23.0421 8.40292L19.2418 1.20967ZM5.40059 15.3588C3.24246 15.3588 1.48709 13.603 1.48709 11.4453C1.48709 9.28754 3.24246 7.53217 5.40059 7.53217C7.55834 7.53217 9.31409 9.28754 9.31409 11.4453C9.31409 13.603 7.55834 15.3588 5.40059 15.3588ZM18.5713 15.3588C16.4136 15.3588 14.6582 13.603 14.6582 11.4453C14.6582 9.28754 16.4136 7.53217 18.5713 7.53217C19.8985 7.53217 21.0688 8.19929 21.7772 9.21179L21.823 9.29917C21.8391 9.33029 21.8623 9.35392 21.8822 9.38167C22.2587 9.98242 22.4848 10.6859 22.4848 11.4449C22.4852 13.603 20.7291 15.3588 18.5713 15.3588Z" fill="white"/>
-                            </svg>   
-                            <div>Версия для слабовидящих</div>
-                         </a>
-                    </li>
-                </ul>
-                <ul class="column">
-                    <li class="h mb-3 fs-md-24 fs-20 fw-700">Связаться с нами</li>
-                    <li class="mb-3"><a href="#" class="d-flex align-items-center">
-                        <img class="mr-12" src="./images/footer_1.svg" alt="иконка футера">
-                        <div class="fw-200">Телефон: 8 (100) 000-00-00</div>
-                    </a></li>
-                    <li class="mb-3 mt-1"><a href="#" class="d-flex align-items-center">
-                        <img class="mr-12" src="./images/footer_2.svg" alt="иконка футера">
-                        <div class="fw-200">Email: no-reply@medars.ru </div>
-                    </a></li>
-                    <li class="mb-3 mt-1"><a href="#" class="d-flex align-items-center">
-                        <img class="mr-12" src="./images/footer_3.svg" alt="иконка футера">
-                        <div class="fw-200">Симферополь , ул. Лермонтова 21, 3 этаж, офис 4
-                        </div>
-                    </a></li>
-                    
-                </ul>
-            </ul>
-            
-        <div class="d-lg-flex d-block justify-content-between align-items-center">
-           <div class="d-flex align-items-center mr-1">
-                <div class="footer_age mr-1"><img src="./images/footer_4.svg" alt=""></div>
-                <div class="fs-md-14 fs-12 color_A9">Информация, представленная на сайте, не может быть использована для постановки диагноза, назначения лечения и не заменяет прием врача. </div>
-           </div>
+      <ul class="columns">
+          <ul class="column d-lg-block d-none">
+              <li class="h mb-3 fs-md-24 fs-20 fw-700">Пациенту</li>
+              <li><a href="#">Врачи</a></li>
+              <li><a href="#">Медучреждения</a></li>
+              <li><a href="#">Лаборатория</a></li>
+              <li><a href="#">Диагностика</a></li>
+              <li><a href="#">Аптека</a></li>
+              <li><a href="#">Мед. страхование</a></li>
+              <li><a href="#">Юр. консультации</a></li>
+              <li><a href="#">Благотворительный фонд</a></li>
+              <li><a href="#">Медкарта пациента</a></li>
+              <li><a href="#">Медицинская библиотека</a></li>
+          </ul>
+          <ul class="column d-lg-block d-none">
+              <li class="h mb-3 fs-md-24 fs-20 fw-700">Медперсоналу и юр. лицам</li>
+              <li><a href="#">Личный кабинет</a></li>
+              <li><a href="#">Регистрация</a></li>
+              <ul class="mt-4">
+                  <li class="h mb-3 fs-md-24 fs-20 fw-700">Помощь</li>
+                  <li><a href="#">Правила сервиса</a></li>
+                  <li><a href="#">Вопрос-ответ</a></li>
+                  <li><a href="#">Служба поддержки</a></li>
+              </ul>
+              
+          </ul>
+          <ul class="column d-lg-block d-none">
+              <li class="h mb-3 fs-md-24 fs-20 fw-700">Условия использования</li>
+              <li><a href="#">Пользовательское соглашение</a></li>
+              <li class="mb-1"><a href="#">Обработка персональных данных</a></li>
+              <li class="mt-4">
+                  <a href="#" class="d-flex">
+                      <svg class="mr-3" width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M19.2418 1.20967C19.1065 0.952045 18.8398 0.814795 18.5672 0.81892C18.2597 0.811795 17.9646 0.989545 17.848 1.29442L16.7402 4.22129C16.5943 4.60792 16.7893 5.03955 17.176 5.18579C17.2626 5.21917 17.3522 5.23492 17.4403 5.23492C17.7426 5.23492 18.0272 5.05042 18.1405 4.75117L18.6745 3.3393L20.2397 6.30142C19.7136 6.13042 19.1537 6.03554 18.5717 6.03554C16.2936 6.03554 14.3432 7.45379 13.5475 9.45217C12.1127 8.87542 10.9896 9.19192 10.4252 9.44954C9.62871 7.45267 7.67909 6.03554 5.40134 6.03554C4.80771 6.03554 4.23846 6.13492 3.70446 6.31192L5.27496 3.33892L5.80934 4.7508C5.92259 5.04967 6.20759 5.23454 6.50946 5.23454C6.59721 5.23454 6.68684 5.21879 6.77384 5.18542C7.16009 5.03917 7.35509 4.60755 7.20921 4.22092L6.10146 1.29405C5.98596 0.989545 5.69159 0.811795 5.38409 0.818545C5.11071 0.81367 4.84409 0.951295 4.70759 1.2093L0.803086 8.60017C0.800086 8.60617 0.800836 8.61217 0.797836 8.61779C0.290086 9.44205 -0.00878906 10.408 -0.00878906 11.4457C-0.00878906 14.4288 2.41784 16.8554 5.40096 16.8554C8.38446 16.8554 10.8111 14.4288 10.8111 11.4457C10.8111 11.2762 10.801 11.1089 10.7856 10.9428C10.8253 10.924 10.8666 10.9098 10.9037 10.8832C10.9131 10.8775 11.8116 10.2749 13.189 10.9259C13.1728 11.0973 13.1627 11.2705 13.1627 11.4457C13.1627 14.4288 15.5893 16.8554 18.5721 16.8554C21.5556 16.8554 23.9822 14.4288 23.9822 11.4457C23.9822 10.3184 23.6346 9.27067 23.0421 8.40292L19.2418 1.20967ZM5.40059 15.3588C3.24246 15.3588 1.48709 13.603 1.48709 11.4453C1.48709 9.28754 3.24246 7.53217 5.40059 7.53217C7.55834 7.53217 9.31409 9.28754 9.31409 11.4453C9.31409 13.603 7.55834 15.3588 5.40059 15.3588ZM18.5713 15.3588C16.4136 15.3588 14.6582 13.603 14.6582 11.4453C14.6582 9.28754 16.4136 7.53217 18.5713 7.53217C19.8985 7.53217 21.0688 8.19929 21.7772 9.21179L21.823 9.29917C21.8391 9.33029 21.8623 9.35392 21.8822 9.38167C22.2587 9.98242 22.4848 10.6859 22.4848 11.4449C22.4852 13.603 20.7291 15.3588 18.5713 15.3588Z" fill="white"/>
+                      </svg>   
+                      <div>Версия для слабовидящих</div>
+                   </a>
+              </li>
+          </ul>
+          <ul class="column">
+              <li class="h mb-3 fs-md-24 fs-20 fw-700">Связаться с нами</li>
+              <li class="mb-3"><a href="#" class="d-flex align-items-center">
+                  <img class="mr-12" src="./images/footer_1.svg" alt="иконка футера">
+                  <div class="fw-200">Телефон: 8 (100) 000-00-00</div>
+              </a></li>
+              <li class="mb-3 mt-1"><a href="#" class="d-flex align-items-center">
+                  <img class="mr-12" src="./images/footer_2.svg" alt="иконка футера">
+                  <div class="fw-200">Email: no-reply@medars.ru </div>
+              </a></li>
+              <li class="mb-3 mt-1"><a href="#" class="d-flex align-items-center">
+                  <img class="mr-12" src="./images/footer_3.svg" alt="иконка футера">
+                  <div class="fw-200">Симферополь , ул. Лермонтова 21, 3 этаж, офис 4
+                  </div>
+              </a></li>
 
-            <a href="#" class="color_A9">© ООО "Медарс", 2022</a>
-        </div>
-    </footer>
+
+              <div class="d-lg-none d-block fotter_item_mob">
+                  <div class="fw-600 mb-2">ООО “Медарс”</div>
+                  <div class="mb-2">ИНН 0000000000000</div>
+                  <div class="mb-2">ОГРН 0000000000000</div>
+                  
+              </div>
+              
+          </ul>
+      </ul>
+      
+  <div class="d-lg-flex d-block justify-content-between align-items-center">
+     <div class="d-flex align-items-center mr-1 mb-lg-0 mb-3">
+          <div class="footer_age d-lg-flex d-none mr-1"><img src="./images/footer_4.svg" alt=""></div>
+          <div class="d-lg-none d-block mr-1"><img src="./images/footer_0.svg" alt=""></div>
+
+
+          <div class="fs-md-14 fs-12 color_A9">Информация, представленная на сайте, не может быть использована для постановки диагноза, назначения лечения и не заменяет прием врача. </div>
+     </div>
+
+      <a href="#" class="color_A9">© ООО "Медарс", 2022</a>
+  </div>
+</footer>
     
 </div>
 
