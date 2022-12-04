@@ -74,7 +74,31 @@ width: 20px;
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
+  body {
+    margin-top: 100px!important;
+}
+  .justify_content_between_mob{
+    justify-content: space-between;
+  }
+  .red_mesto_rab_mob{
+    display: flex;
+    background: #618EDF;
+border-radius: 3px;
+width: 35px;
+height: 35px;
+justify-content: center;
+align-items: center;
+margin-right: 45px;
+  }
+  .left_m_t .info_items{
+    margin-top: 39px;
+  }
+  .info_items .change_mob{
+    margin-top: -20px;
+    position: absolute;
+    right: 0;
+  }
   .container_page {
     padding-bottom: 43px!important;
 }
