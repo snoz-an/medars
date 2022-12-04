@@ -36,7 +36,22 @@
 
 }
 
+@media screen and (max-width: 1200px) {
+
+#order_card {
+  margin-right: 38px!important;
+}
+.menu_btn_bottom svg{
+width: 20px;
+}
+}
 @media screen and (max-width: 991px) {
+  .order_container {
+    display: block!important;
+}
+  #order_card {
+    display: none;
+}
   footer{
     padding-bottom: 100px!important;
   }
@@ -56,6 +71,58 @@
   .logo_list_2{
     display: none!important;
   }
+}
+
+
+@media screen and (max-width: 768px) {
+  .container_page {
+    padding-bottom: 43px!important;
+}
+  .contacts_table {
+    padding: 15px 10px!important;
+}
+  .contacts_table .column_mob_2{
+    flex-direction: column!important;
+    justify-content: start!important;
+    align-items: start!important;
+  }
+  .contacts_table .first_column {
+    width: 100%!important;
+}
+  .contacts_table .column_mob{
+    flex-direction: column;
+  }
+  .clinick_table_inputs_container_sm {
+    width: 100%!important;
+}
+
+  .clinick_table_inputs_container_big {
+    width: 100%!important;
+    margin-bottom: 20px;
+}
+  .clinick_table .column_mob{
+    flex-direction: column;
+  }
+  .adress_table {
+    padding: 20px;
+}
+  .change_first {
+    width: 100%!important;
+    padding: 10px!important;
+    margin-top: 20px;
+}
+  .name_container_mob{
+    display: block!important;
+  }
+  .profil_img_container {
+    width: 50%!important;
+    height: auto!important;
+    margin-right: 12px!important; 
+}
+
+ .left_m_t .first_block_info{
+    flex-direction: column;
+ }
 }
 .headeer_menu_mob_active {
   opacity: 1!important;
@@ -91,6 +158,9 @@
   flex-direction: column;
   cursor: pointer;
 }
+.flex_column{
+  flex-direction: column;
+}
 .fixed_2{
   position: fixed;
     margin: auto;
@@ -101,6 +171,12 @@
     z-index: 4;
     padding: 16px 0 16px;
     background: white;
+}
+.contacts_table .column_mob_2{
+  align-items: center;
+}
+.name_container_mob{
+  display: none;
 }
 ul{
     list-style-type: none;
